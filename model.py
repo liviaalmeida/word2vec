@@ -20,13 +20,6 @@ def preprocessor(text):
 
   return filtered
 
-with open('gameofthrones.txt', 'r', encoding='utf8') as textFile:
-  text = textFile.readlines()
-  text = ' '.join(text)
-
-sentences = preprocessor(text)
-
-
 if __name__ == "__main__":
   if len(argv) == 2:
     with open(argv[1], 'r', encoding='utf8') as textFile:
