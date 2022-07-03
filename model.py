@@ -35,4 +35,4 @@ if __name__ == "__main__":
     sentences = preprocessor(text)
     model = Word2Vec(sentences=sentences, vector_size=100, window=5, min_count=3, workers=4)
     fileName = argv[1].split('.')[0]
-    model.save(f'{fileName}.model')
+    model.wv.save(f'{fileName}.wv')
