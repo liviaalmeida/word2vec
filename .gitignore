@@ -2,3 +2,5 @@ __pycache__
 
 *.model
 *.wv
+
+*latest-pages-articles.xml.bz2
